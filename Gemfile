@@ -36,6 +36,9 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '3.3.2'
   gem 'guard-rspec', '4.6.0'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 group :test do
@@ -57,7 +60,7 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
+  gem 'pg'
   gem 'rails_12factor', '0.0.2'
 end
 
