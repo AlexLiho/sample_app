@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.4'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
+gem 'high_voltage', '~> 2.4.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'less-rails'
@@ -49,6 +50,8 @@ end
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara'
+  gem 'cucumber-rails', '1.4.0', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 group :development do
