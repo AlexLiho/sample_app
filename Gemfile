@@ -3,8 +3,16 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
+gem 'bootstrap-sass'
+gem 'bcrypt-ruby'
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+gem 'high_voltage', '~> 2.4.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'less-rails'
+gem 'therubyracer'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -39,11 +47,14 @@ group :development, :test do
   gem 'spork-rails'
   gem 'guard-spork'
   gem 'childprocess'
+  gem 'factory_girl_rails'
 end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara'
+  gem 'cucumber-rails', '1.4.0', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 group :development do
